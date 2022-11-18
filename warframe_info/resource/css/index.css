@@ -1,16 +1,44 @@
 @charset "utf-8";
 
+/* 영어 폰트 지정 */
+@font-face{
+  font-family:'Josefin Sans';
+  src:url('../font/JosefinSans-VariableFont_wght.ttf');
+  font-weight: bold;
+  unicode-range: U+0041-005A, U+0061-007A
+}
+/* 영어 폰트 지정 */
+
+/* 숫자 폰트 지정 */
+@font-face{
+  font-family:'NotoNastaliqUrdu';
+  src:url('../font/NotoNastaliqUrdu-VariableFont_wght.ttf');
+  unicode-range:  U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E;
+}
+/* 숫자 폰트 지정 */
+
+/* 한글 폰트 지정 */
+@font-face{
+  font-family:'Do Hyeon';
+  src:url('../font/DoHyeon-Regular.ttf');
+  unicode-range: U+AC00-D7A3;
+}
+
+@font-face{
+  font-family:'Sunflower';
+  src:url('../font/Sunflower-Medium.ttf');
+  unicode-range: U+AC00-D7A3;
+}
+/* 한글 폰트 지정 */
+
 html, body {
   height: 100%
 }
 
-.header{
-  min-height: 20%;
-}
-
 .main{
   position: relative;
-  min-height:calc(80% - 93px);
+  min-height:calc(100% - 200px);
+  padding-top: 30px;
 }
 
 .contentArea{
@@ -73,14 +101,17 @@ html, body {
   }
 
   .blog-header-logo {
-    font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
-    font-size: 2.25rem;
+    font-style: italic;
+    font-size: 3.25rem;
     text-decoration: none;
-}
+    text-shadow: 3px 4px #6e9dd6;
+    margin: 0;
+  }
 
 .text-dark {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-dark-rgb),var(--bs-text-opacity))!important;
+  font-family: 'NotoNastaliqUrdu', 'Josefin Sans', 'Sunflower';
 }
 
 .blog-pagination {
@@ -134,7 +165,6 @@ html, body {
   left: 15%;
   width: 70%;
   height: 90%;
-  background-color: black;
 }
 
 .backDark{
@@ -152,5 +182,71 @@ html, body {
   font-size: 1.5rem;
   font-weight: 700;
   color: rgb(88, 138, 88);
+  display: inline-block;
+}
+
+.contentBox{
+  position: relative;
+}
+
+.btn-group-vertical{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.mainContent > .contentBox:nth-child(1){
+  min-height: 120px;
+}
+
+.mainContent > .contentBox:nth-child(2), .contentBox:nth-child(3){
+  min-height: 200px;
+}
+
+.mainContent > .contentBox:nth-child(4){
+  min-height: 400px;
+}
+
+.mainContent > .contentBox:nth-child(5){
+  min-height: 600px;
+}
+
+.btn-group-sm > button{
+  width: 107px !important;
+}
+
+iframe, .strContent:not(:first-child){
+  display: none;
+}
+
+.timeSec{
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.contentBox > .px-4{
+  font-size: 1.25rem;
+  text-align: center;
+}
+.contentBox > .text-center{
+  font-size: 1.5rem;
+}
+
+.table{
+  width: 78%;
+  margin: auto;
+  border: transparent;
+  font-size: 17px;
+}
+
+th, td {
+  text-align: left;
+}
+
+.mainBack, .headerBack, .blog-footer{
+  background-color: whitesmoke;
+}
+
+#timeUmbra{
   display: inline-block;
 }
