@@ -10,99 +10,75 @@
     <title>warframe Info</title>
 
     <!-- bootstrap / fontawesome / jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/4a29002bb3.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.slim.js" integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk=" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/4a29002bb3.js" crossorigin="anonymous"></script>
     <!-- bootstrap / fontawesome / jquery cdn -->
-   
+
     <!-- import css / script -->
     <link rel="stylesheet" href="resource/css/index.css">
+    <script type="text/javascript" src="resource/script/transLate.js"></script>
     <script type="text/javascript" src="resource/script/index.js"></script>
     <!-- import css / script -->
 
   </head>
   <body>
-    
-    <div class="container header">
-    <header class="blog-header lh-1">
-        <div class="row flex-nowrap justify-content-between align-items-center">
-            <div class="col-12 text-center">
-                <a class="blog-header-logo text-dark" href="#">warframe Info</a>
-            </div>
+    <div class="headerBack">
+        <div class="container header">
+            <header class="blog-header lh-1">
+                <div class="row flex-nowrap justify-content-between align-items-center">
+                    <div class="col-12 text-center">
+                        <a class="blog-header-logo text-dark" href="#">WF INFO</a>
+                    </div>
+                </div>
+            </header>
         </div>
-    </header>
     </div>
 
-    <main class="container main">
-
-        <div class="row g-5 contentArea">
-            <div class="col-md-8">
-
-                <!-- Void Trader (키티어) -->
-                <div class="p-1 p-md-2 mb-4 text-dark rounded bg-light">
-                    <div class="py-2 text-center"> Void Trader (키 티어) </div>
-                    <div class="py-2 px-4 voidTraderInfo"> 
-                    </div>
+    <div class="mainBack">
+        <main class="container main">
+            <div class="row g-5 contentArea">
+                <div class="col-md-9 mainContent">                
                 </div>
                 
-                <!-- Cycle Timers (주기) -->
-                <div class="p-2 p-md-2 mb-4 text-dark rounded bg-light">
-                    <div class="py-2 text-center"> Cycle Timers (주기) </div>
-                    <div class="py-2 px-4 vallisCycleInfo">  </div>
-                </div>
-
-                <!-- Sortie (출격) -->
-                <div class="p-2 p-md-2 mb-4 text-dark rounded bg-light">
-                    <div class="py-2 text-center"> Sortie (출격) </div>
-                    <div class="py-2 px-4 sortieInfo">  </div>
-                </div>
-
-                <!-- Night Wave (나이트 웨이브) -->
-                <div class="p-2 p-md-2 mb-4 text-dark rounded bg-light">
-                    <div class="py-2 text-center"> Night Wave (나이트 웨이브) </div>
-                    <div class="py-2 px-4 firstBox">  </div>
-                </div>
-
-                <!-- Fissures (균열 정보) -->
-                <div class="p-2 p-md-2 mb-4 text-dark rounded bg-light">
-                    <div class="py-2 text-center"> Fissures (균열 정보) </div>
-                    <div class="py-2 px-4 firstBox">  </div>
-                </div>
-
-            </div>
-
-            <div class="col-md-4">
-                <div class="position-sticky iconAreaWrap">
-                    <div class="p-3 col-12 rounded iconArea">
-                        <div class="searchInfo" title="워프레임 위키 이동">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </div>
-                        <div class="useChatBot" title="챗봇 이용">
-                            <i class="fa-brands fa-rocketchat"></i>
-                        </div>
-                        <div class="moveOverFrame" title="오버 프레임 이동">
-                            <img src="https://static.overframe.gg/static/images/logos/logo-64.png" alt="overFrame"/>
-                        </div>
-                        <div class="moveMarket" title="마켓 이동">
-                            <i class="fa-solid fa-cart-shopping"></i>
+                <div class="col-md-3">
+                    <div class="position-sticky iconAreaWrap">
+                        <div class="p-3 col-12 rounded iconArea">
+                            <div class="searchInfo" title="워프레임 위키 이동">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="moveOverFrame" title="오버 프레임 이동">
+                                <img src="https://static.overframe.gg/static/images/logos/logo-64.png" alt="overFrame"/>
+                            </div>
+                            <div class="moveMarket" title="마켓 이동">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </div>
+                            <div class="useChatBot" title="챗봇 이용">
+                                <i class="fa-brands fa-rocketchat"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="popArea">
-            <div class="iFrameArea"></div>
-            <div class="backDark"></div>
-        </div>
-    </main>
-
+            <div class="popArea">
+                <div class="iFrameArea">
+                    <iframe width="100%" height="100%" id="iframeWin"></iframe>
+                </div>
+                <div class="backDark"></div>
+            </div>
+        </main>
+    </div>
     <footer class="blog-footer">
+    <p>
+        <a href="https://chrome.google.com/webstore/detail/iframe-allow/gifgpciglhhpmeefjdmlpboipkibhbjg?catego...&hl=ko" target="_blank">iframe Allow 설치 페이지 이동</a>
+    </p>
     <div> Made By <p class="clanName">theFysi</p> clan</div>
     <p>
         contact us. <a href="mailto:shejzuwndje@gmail.com">shejzuwndje@gmail.com </a>
     </p>
+    <div> This site was created using the <a href="https://docs.warframestat.us/">WarframeStat.us API</a> provided by the warframe hub.</div>
     </footer>
   </body>
 </html>
