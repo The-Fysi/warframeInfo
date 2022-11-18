@@ -207,10 +207,6 @@ html, body {
   min-height: 400px;
 }
 
-.mainContent > .contentBox:nth-child(5){
-  min-height: 600px;
-}
-
 .btn-group-sm > button{
   width: 107px !important;
 }
