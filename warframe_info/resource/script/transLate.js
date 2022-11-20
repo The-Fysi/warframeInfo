@@ -38,6 +38,9 @@ function tarnsLate(data){
         case 'Environmental Hazard: Fire': 
             $korVal = '화재';
             break;
+        case 'Augmented Enemy Armor': 
+            $korVal = '강화된 적 방어력';
+            break;
         // 오스트론
         case 'Capture the Grineer Agent': 
             $korVal = '그리니어 사령관 생포';
@@ -255,6 +258,9 @@ function tarnsLate(data){
             break;
         case 'Reanimator': 
             $korVal = '데이모스에서 쓰러진 네크라메크를 조종하기';
+            break;
+        case 'Surf\'s Up!': 
+            $korVal = 'k-드라이브 탑승 중 적 20체 처치하기';
             break;
         // 나이트웨이브 - 주간
         case 'Not a Warning Shot': 
