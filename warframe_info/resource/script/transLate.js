@@ -41,6 +41,10 @@ function tarnsLate(data){
         case 'Augmented Enemy Armor': 
             $korVal = '강화된 적 방어력';
             break;
+        // 집정관
+        case 'Disruption': 
+            $korVal = '교란';
+            break;
         // 오스트론
         case 'Capture the Grineer Agent': 
             $korVal = '그리니어 사령관 생포';
